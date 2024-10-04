@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply m-0 p-0;
+}
+body{
+    @apply font-primary;
+}
+
+.box_shadow{
+    @apply shadow-[7px_7px_0px_rgba(255,237,0,.52)] 
+}

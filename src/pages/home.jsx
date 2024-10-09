@@ -15,8 +15,7 @@ const images = [
   "https://marketplace.canva.com/EAGGN4jLiEU/1/0/1600w/canva-black-and-cream-illustrative-hair-salon-logo-vkZoxxgOYCk.jpg",
 
   "https://s3.amazonaws.com/cdn.designcrowd.com/blog/45-Hair-Salon-Logos-for-a-Fabulous-Brand-Identity/refined-salon-by-skippadouza-brandcrowd.png",
-  "src/assets/tony guuy.jpg",
-  "src/assets/lakme-vector-logo.png",
+
   "https://www.shutterstock.com/image-vector/luxury-elegant-illustration-logo-design-260nw-2015399750.jpg"
 ].map((image) => ({
   id: crypto.randomUUID(),
@@ -72,17 +71,17 @@ const Home = () => {
                   <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
                     <h1 className="text-[27px] font-semibold">Select Salon</h1>
                     <p className="text-[12px] font-semibold opacity-30">explore top rated salons in your area with just a tap
-                      </p>
+                    </p>
                   </div>
                   <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
                     <h1 className="text-[27px] font-semibold">Booking Confirmed</h1>
                     <p className="text-[12px] font-semibold opacity-30">confirm your booking instantly with grabky
-                      </p>
+                    </p>
                   </div>
                 </div>
                 <div className=" w-[476px] pt-4 flex md:flex-row flex-col justify-start items-center">
-                  <img className="w-[233px]" src="src/assets/playstorepng-removebg-preview.png " />
-                  <img className="h-[120px]" src="src/assets/applestorepng-removebg-preview.png" />
+                  <img className="w-[233px]" src="../public/assets/playstorepng-removebg-preview.png" />
+                  <img className="h-[120px]" src=" ../public/assets/applestorepng-removebg-preview.png  " />
                 </div>
               </div>
               <div className="h-[451px] w-[401px] rounded-[30px] box_shadow">
@@ -158,8 +157,8 @@ const Home = () => {
               Download grabky app
             </div>
             <div className=" flex md:flex-row flex-col justify-start items-center">
-              <img className="w-[233px]" src="src/assets/playstorepng-removebg-preview.png " />
-              <img className="h-[120px]" src="src/assets/applestorepng-removebg-preview.png" />
+              <img className="w-[233px]" src="../public/assets/playstorepng-removebg-preview.png" />
+              <img className="h-[120px]" src=" ../public/assets/applestorepng-removebg-preview.png  " />
             </div>
           </div>
         </div>

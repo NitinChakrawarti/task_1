@@ -4,6 +4,12 @@ import { Banner } from "../components/Banner";
 import MerchantCrousel from "../components/crousel.jsx"
 import Faq from "../components/faq.jsx"
 import Review from "../components/review.jsx"
+import { FaInstagram } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
 
 const images = [
   "https://marketplace.canva.com/EAGGN4jLiEU/1/0/1600w/canva-black-and-cream-illustrative-hair-salon-logo-vkZoxxgOYCk.jpg",
@@ -48,9 +54,9 @@ const Home = () => {
         </div>
 
         <div className="services flex flex-col md:flex-row justify-center gap-[50px] mt-[150.0px] items-center ">
-          <div className="card h-[358px] w-[291px] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
-          <div className="card h-[358px] w-[291px] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
-          <div className="card h-[358px] w-[291px] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
+          <div className="card  h-[358px] w-[291px] hover:shadow-[8px_7px_0px_rgba(255,237,0,.52)] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
+          <div className="card  h-[358px] w-[291px] hover:shadow-[8px_7px_0px_rgba(255,237,0,.52)] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
+          <div className="card  h-[358px] w-[291px] hover:shadow-[8px_7px_0px_rgba(255,237,0,.52)] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
         </div>
         <div className="flex flex-col justify-center items-center mt-[150px]">
           <h1 className="text-[30px] font-[650]">Easy Step to transform your look</h1>
@@ -58,9 +64,21 @@ const Home = () => {
             <div className="py-2 flex justify-center gap-[80px] items-start ">
               <div className="flex flex-col justify-start gap-0">
                 <div className=" h-[451px] w-[476px] flex flex-col justify-between">
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl "></div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl "></div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl "></div>
+                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Select Services</h1>
+                    <p className="text-[12px] font-semibold opacity-30">Choose from a wide range of salon services personalized
+                      for you.</p>
+                  </div>
+                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Select Salon</h1>
+                    <p className="text-[12px] font-semibold opacity-30">explore top rated salons in your area with just a tap
+                      </p>
+                  </div>
+                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Booking Confirmed</h1>
+                    <p className="text-[12px] font-semibold opacity-30">confirm your booking instantly with grabky
+                      </p>
+                  </div>
                 </div>
                 <div className=" w-[476px] pt-4 flex md:flex-row flex-col justify-start items-center">
                   <img className="w-[233px]" src="src/assets/playstorepng-removebg-preview.png " />
@@ -85,9 +103,18 @@ const Home = () => {
             <div className="py-2 flex flex-row-reverse justify-center gap-[80px] items-start ">
               <div className="flex flex-col justify-start gap-0">
                 <div className=" h-[451px] w-[476px] flex flex-col justify-between">
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl "></div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl "></div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl "></div>
+                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Grow Your Business</h1>
+                    <p className="text-[12px] font-semibold opacity-30">Expand your salon's reach and clientele effortlessly</p>
+                  </div>
+                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Streamline Operations</h1>
+                    <p className="text-[12px] font-semibold opacity-30">Efficiently manage your salon's bookings and appointments online.</p>
+                  </div>
+                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Boost Online Presence</h1>
+                    <p className="text-[12px] font-semibold opacity-30">Elevate your salon's visibility and attract more customers online.</p>
+                  </div>
                 </div>
                 <div className=" w-[476px] mt-14 flex md:flex-row flex-col justify-start gap-14 items-center">
                   <div className="w-[241px] h-[70px] bg-secondary flex justify-center items-center text-[20px] shadow-[6px_10px_0px_rgba(0,0,0,1)] rounded-full font-bold">Register Today</div>
@@ -100,7 +127,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[150px]">
+        <div className="mt-[150px] w-[600px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <h1 className="text-[20px] font-bold  text-center ">Our Happy Merchant’s</h1>
           <div className='pt-[30px] '>
             <MerchantCrousel />
@@ -112,12 +139,6 @@ const Home = () => {
             <Faq />
           </div>
         </div>
-        {/* <div className="mt-[130px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center">
-          <h1 className="text-[30px] font-bold  text-center ">Customer Reviews</h1>
-
-          <Review />
-
-        </div> */}
 
         <div className="mt-[130px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <h1 className="text-[30px] font-bold  text-center ">Customer Reviews</h1>
@@ -143,10 +164,43 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-[130px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
-          <h1 className="text-[30px] font-bold  text-center ">Customer Reviews</h1>
-          <Review />
+        <div className="mt-[130px] w-[950px]  flex justify-between flex-row ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
+          <div className="flex flex-col justify-start">
+            <h1 className="text-[54px] font-extrabold text-start">Grabky</h1>
+            <div className="flex gap-8">
+              <div className="text-start">
+                <p className="text-[16px] font-bold mt-4 opacity-70">About Us</p>
+                <p className="text-[16px] font-bold mt-4 opacity-70">Terms & Conditions</p>
+                <p className="text-[16px] font-bold mt-4 opacity-70">Cookie Policy</p>
+                <p className="text-[16px] font-bold mt-4 opacity-70">Find a salon</p>
+              </div>
+              <div className="text-start">
+                <p className="text-[16px] font-bold mt-4 opacity-70">Contact</p>
+                <p className="text-[16px] font-bold mt-4 opacity-70">Blog</p>
+                <p className="text-[16px] font-bold mt-4 opacity-70">FAQ'S</p>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <button className="h-[68px] w-[215px] py-4 bg-secondary rounded-[12px] text-[24px]  flex justify-center items-center  font-bold mt-2 shadow-[0_4px_4px_rgba(0,0,0,.25)] "> Partner Up</button>
+
+            <div className=" mt-12">
+              <p className="text-[16px] font-bold mt-4 text-start opacity-70">Social</p>
+
+              <div className="flex gap-4 mt-4">
+                <FaInstagram
+                  size="1.5rem"
+                />
+                <RiWhatsappFill size="1.5rem" />
+                <FaLinkedin size="1.5rem" />
+                <FaFacebook size="1.5rem" />
+                <FaTwitter size="1.5rem" />
+
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="h-[160px]"></div>
       </div>
     </>
   )

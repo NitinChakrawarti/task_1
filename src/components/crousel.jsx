@@ -44,26 +44,17 @@ function MerchantCrousel() {
 
     setInterval(move_to_next, 5000)
 
-
-
-    // const move_to_next = () => {
-    //     setCurrentIndex((currentIndex) => (currentIndex < merchants.length - 1 ? currentIndex + 1 : 0));
-
-    // };
-
-    // setInterval(move_to_next , 5000 )
-
     return (
-        <div className="relative ">
-
-            <div className="-z-0 relative overflow-hidden w-full md:w-5/6 rounded-3xl  md:left-32 ">
-                <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+    
+        <div className='overflow-hidden relative'>
+            <div className="flex ">
+                <section className=" auto_scroll_brand_section h-[131px]  mt-10" style={{ "--speed": `${8000}ms` }} >
                     {merchants.map((merchant, index) => (
-                        <div key={index} className="flex-none w-full flex flex-col md:flex-col items-center justify-center ml-auto mr-auto left-[50%] right-[50%] ">
-                            <div className='text-center font-bold flex justify-center items-center w-[50%] '>
+                        <div key={index} className="flex-none w-full flex flex-col md:flex-col items-center justify-center ml-12 ">
+                            <div className='text-center font-bold flex justify-center items-center w-[60%]'>
                                 <p className="text-[15px]"> {merchant.review} </p>
                             </div>
-                            <div className="flex w-[25%] justify-between pt-6">
+                            <div className="flex gap-8 justify-between pt-6">
                                 <div className="">
                                     <p className='text-[15px] font-medium text-justify'>
                                         {merchant.name}
@@ -78,10 +69,12 @@ function MerchantCrousel() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </section>
             </div>
-
         </div>
+
+
+
     )
 }
 

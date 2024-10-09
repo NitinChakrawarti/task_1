@@ -3,13 +3,37 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     @apply m-0 p-0;
 }
-body{
+
+body {
     @apply font-primary;
 }
 
-.box_shadow{
-    @apply shadow-[7px_7px_0px_rgba(255,237,0,.52)] 
+
+.box_shadow {
+    box-shadow: 7px 7px 0 rgba(255, 237, 0, .52);
+}
+
+/* @apply shadow-[7px_7px_0_rgba(255, 237, 0,.52)] */
+
+.Typewriter__cursor {
+    @apply text-transparent
+}
+
+.auto_scroll_brand_section {
+    display: flex;
+    animation: swipe var(--speed) linear infinite backwards;
+    
+}
+
+@keyframes swipe {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
 }

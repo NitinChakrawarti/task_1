@@ -49,11 +49,11 @@ const Faq = () => {
 
     return (
         <div className='ml-auto mr-auto left-1/2 right-1/2 flex'>
-            <div className="w-[942px] h-auto bg-white box_shadow mt-10 pt-10 border-[1px] border-primary/20 rounded-[14px] " >
+            <div className=" w-[40vmax] md:w-[70vmax] h-auto bg-white box_shadow mt-10 pt-4 md:pt-10 border-[1px] border-primary/20 rounded-[14px] " >
                 {/* <div className='flex justify-center items-center h-[100px] mb-10'>
                     <h1 className='text-[25px] font-bold'>Frequently Asked Questions</h1>
                 </div> */}
-                <div className='flex flex-col px-40 py-5'>
+                <div className='flex flex-col px-6 md:px-40 py-5'>
                     <div className='flex flex-row  justify-between ' onMouseEnter={exapandDropdown} onMouseLeave={shrinkdown}  >
                         <h1 className='text-[23px] font-medium'>How does it works ?</h1>
                         <div>
@@ -65,7 +65,7 @@ const Faq = () => {
                         <p className='text-[20px] pt-4 hidden description'>Grabky is a platform that helps you to manage your salon business. It helps you to manage your appointments, staff, inventory, and customer data.</p>
                     </div>
                 </div>
-                <div className='flex flex-col px-40 py-5'>
+                <div className='flex flex-col px-6 md:px-40 py-5'>
                     <div className='flex flex-row  justify-between ' onMouseEnter={exapandDropdown2} onMouseLeave={shrinkdown2}  >
                         <h1 className='text-[23px] font-medium'>How does it works ?</h1>
                         <div>
@@ -77,7 +77,7 @@ const Faq = () => {
                         <p className='text-[20px] pt-4 hidden description2'>Grabky is a platform that helps you to manage your salon business. It helps you to manage your appointments, staff, inventory, and customer data.</p>
                     </div>
                 </div>
-                <div className='flex flex-col px-40 py-5'>
+                <div className='flex flex-col px-6 md:px-40 py-5'>
                     <div className='flex flex-row  justify-between ' onMouseEnter={exapandDropdown3} onMouseLeave={shrinkdown3}  >
                         <h1 className='text-[23px] font-medium'>How does it works ?</h1>
                         <div>
@@ -89,7 +89,7 @@ const Faq = () => {
                         <p className='text-[20px] pt-4 hidden description3'>Grabky is a platform that helps you to manage your salon business. It helps you to manage your appointments, staff, inventory, and customer data.</p>
                     </div>
                 </div>
-                <div className='flex flex-col px-40 py-5'>
+                <div className='flex flex-col px-6 md:px-40 py-5'>
                     <div className='flex flex-row  justify-between ' onMouseEnter={exapandDropdown4} onMouseLeave={shrinkdown4}  >
                         <h1 className='text-[23px] font-medium'>How does it works ?</h1>
                         <div>

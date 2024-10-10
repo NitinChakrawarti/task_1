@@ -9,7 +9,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-
+import playstore from "../assets/playstorepng-removebg-preview.png"
+import applestore from "../assets/applestorepng-removebg-preview.png"
 
 const images = [
   "https://marketplace.canva.com/EAGGN4jLiEU/1/0/1600w/canva-black-and-cream-illustrative-hair-salon-logo-vkZoxxgOYCk.jpg",
@@ -58,75 +59,79 @@ const Home = () => {
           <div className="card  h-[358px] w-[291px] hover:shadow-[8px_7px_0px_rgba(255,237,0,.52)] shadow-[0_4px_4px_rgba(0,0,0,.25)] bg-white  rounded-[30px]"></div>
         </div>
         <div className="flex flex-col justify-center items-center mt-[150px]">
-          <h1 className="text-[30px] font-[650]">Easy Step to transform your look</h1>
+          <h1 className="text-[30px] font-[650] text-center ">Easy Step to transform your look</h1>
           <div className=" w-full  mt-20">
-            <div className="py-2 flex justify-center gap-[80px] items-start ">
+            <div className="py-2 flex flex-col-reverse md:flex-row justify-center gap-[80px] items-start ">
               <div className="flex flex-col justify-start gap-0">
-                <div className=" h-[451px] w-[476px] flex flex-col justify-between">
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                <div className=" h-[451px] w-[30vmax] md:w-[476px] flex flex-col justify-between">
+                  <div className="h-[122px] w-[45vmax]  md:w-[476px] bg-white box_shadow rounded-xl p-8 ">
                     <h1 className="text-[27px] font-semibold">Select Services</h1>
                     <p className="text-[12px] font-semibold opacity-30">Choose from a wide range of salon services personalized
-                      for you.</p>
+                      for you.
+                    </p>
                   </div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                  <div className="h-[122px] w-[45vmax]  md:w-[476px] bg-white box_shadow rounded-xl p-8 ">
                     <h1 className="text-[27px] font-semibold">Select Salon</h1>
                     <p className="text-[12px] font-semibold opacity-30">explore top rated salons in your area with just a tap
                     </p>
                   </div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                  <div className="h-[122px] w-[45vmax]  md:w-[476px] bg-white box_shadow rounded-xl p-8 ">
                     <h1 className="text-[27px] font-semibold">Booking Confirmed</h1>
                     <p className="text-[12px] font-semibold opacity-30">confirm your booking instantly with grabky
                     </p>
                   </div>
                 </div>
-                <div className=" w-[476px] pt-4 flex md:flex-row flex-col justify-start items-center">
-                  <img className="w-[233px]" src="../public/assets/playstorepng-removebg-preview.png" />
-                  <img className="h-[120px]" src=" ../public/assets/applestorepng-removebg-preview.png  " />
+                <div className=" w-[30vmax] md:w-[476px] pt-4 flex md:flex-row flex-col justify-start items-center">
+                  <img className="w-[233px]" src={playstore} />
+                  <img className="h-[120px]" src={applestore} />
                 </div>
               </div>
-              <div className="h-[451px] w-[401px] rounded-[30px] box_shadow">
+              <div className="h-[451px] w-[40vmax] md:w-[401px] ml-6 md:ml-0 rounded-[30px] box_shadow">
                 <div className="shadow-md bg-white w-full h-full rounded-[30px]"></div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[130px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center">
+        <div className="mt-[130px] w-[30vmax] md:w-[65vmax]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center">
           <h1 className="text-[20px] font-bold pb-[50px] ">Trusted by top salons</h1>
           <Banner images={images} speed={6000} />
         </div>
         <div className="mt-[120px] flex flex-col justify-center items-center">
           <h1 className="text-[30px] font-[650] text-center">Grow Your Business with Grabky</h1>
-          <p className="text-[15px] font-semibold w-[40%] text-center pt-[10px]">"Unlock salon success effortlessly with Grabky. Streamline operations, attract more clients, and boost your business forward. Register today to elevate your salon's performance."</p>
+          <p className="text-[15px] font-semibold w-[90%] md:w-[40%] text-center pt-[10px]">"Unlock salon success effortlessly with Grabky. Streamline operations, attract more clients, and boost your business forward. Register today to elevate your salon's performance."</p>
 
           <div className=" w-full  mt-20">
-            <div className="py-2 flex flex-row-reverse justify-center gap-[80px] items-start ">
+            <div className="py-2 flex flex-col-reverse md:flex-row-reverse justify-center gap-[80px] items-start ">
               <div className="flex flex-col justify-start gap-0">
-                <div className=" h-[451px] w-[476px] flex flex-col justify-between">
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
-                    <h1 className="text-[27px] font-semibold">Grow Your Business</h1>
-                    <p className="text-[12px] font-semibold opacity-30">Expand your salon's reach and clientele effortlessly</p>
+                <div className=" h-[451px] w-[30vmax] md:w-[476px] flex flex-col justify-between">
+                  <div className="h-[122px] w-[45vmax]  md:w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Select Services</h1>
+                    <p className="text-[12px] font-semibold opacity-30">Choose from a wide range of salon services personalized
+                      for you.</p>
                   </div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
-                    <h1 className="text-[27px] font-semibold">Streamline Operations</h1>
-                    <p className="text-[12px] font-semibold opacity-30">Efficiently manage your salon's bookings and appointments online.</p>
+                  <div className="h-[122px] w-[45vmax]  md:w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Select Salon</h1>
+                    <p className="text-[12px] font-semibold opacity-30">explore top rated salons in your area with just a tap
+                    </p>
                   </div>
-                  <div className="h-[122px] w-[476px] bg-white box_shadow rounded-xl p-8 ">
-                    <h1 className="text-[27px] font-semibold">Boost Online Presence</h1>
-                    <p className="text-[12px] font-semibold opacity-30">Elevate your salon's visibility and attract more customers online.</p>
+                  <div className="h-[122px] w-[45vmax]  md:w-[476px] bg-white box_shadow rounded-xl p-8 ">
+                    <h1 className="text-[27px] font-semibold">Booking Confirmed</h1>
+                    <p className="text-[12px] font-semibold opacity-30">confirm your booking instantly with grabky
+                    </p>
                   </div>
                 </div>
-                <div className=" w-[476px] mt-14 flex md:flex-row flex-col justify-start gap-14 items-center">
+                <div className=" w-[] md:w-[28vmax] mt-14 flex md:flex-row flex-col justify-start gap-14 items-center">
                   <div className="w-[241px] h-[70px] bg-secondary flex justify-center items-center text-[20px] shadow-[6px_10px_0px_rgba(0,0,0,1)] rounded-full font-bold">Register Today</div>
-                  <p className='text-[20px] opacity-50 font-medium '>Learn More </p>
+                  <p className='text-[20px] opacity-50 font-medium md:flex hidden '>Learn More </p>
                 </div>
               </div>
-              <div className="h-[451px] w-[401px] rounded-[30px] box_shadow">
+              <div className="h-[451px] w-[40vmax] md:w-[401px] ml-6 md:ml-0 rounded-[30px] box_shadow">
                 <div className="shadow-md bg-white w-full h-full rounded-[30px]"></div>
               </div>
             </div>
           </div>
         </div>
-        <div className="mt-[150px] w-[600px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
+        <div className="mt-[150px] w-[30vmax] md:w-[50vmax]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <h1 className="text-[20px] font-bold  text-center ">Our Happy Merchant’s</h1>
           <div className='pt-[30px] '>
             <MerchantCrousel />
@@ -139,31 +144,31 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-[130px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
+        <div className="mt-[130px] w-[30vmax] md:w-[65vmax]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <h1 className="text-[30px] font-bold  text-center ">Customer Reviews</h1>
           <Review />
         </div>
-        <div className="mt-[130px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
+        <div className="mt-[130px] w-[35vmax] sm:w-[65vmax]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <h1 className="text-[30px] font-bold  text-center ">Still have questions?</h1>
           <p className='text-[12px] text-primary font-medium'> Feel free to reach out to us</p>
           <button className="h-[24px] w-[90px] py-4 bg-secondary rounded-[4px] text-[15px]  flex justify-center items-center  font-medium mt-2"> Contact</button>
         </div>
 
 
-        <div className="mt-[150px] w-[950px]  flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
+        <div className="mt-[150px] w-[30vmax] md:w-[100vmax] hidden md:flex justify-center flex-col items-center ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <div className="bg-secondary shadow-[0_4px_4px_rgba(0,0,0,.25)] w-[950px] h-[83px]  rounded-[13px] flex justify-between items-center px-6  ">
-            <div className="w-[240px] text-[20px] font-bold">
+            <div className="w-[20vmax] text-[20px] font-bold">
               For better experience
               Download grabky app
             </div>
             <div className=" flex md:flex-row flex-col justify-start items-center">
-              <img className="w-[233px]" src="../public/assets/playstorepng-removebg-preview.png" />
-              <img className="h-[120px]" src=" ../public/assets/applestorepng-removebg-preview.png  " />
+              <img className="w-[233px]" src={playstore} />
+              <img className="h-[120px]" src={applestore} />
             </div>
           </div>
         </div>
 
-        <div className="mt-[130px] w-[950px]  flex justify-between flex-row ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
+        <div className="mt-[130px] w-[30vmax] md:w-[65vmax]  flex justify-between flex-col md:flex-row ml-auto mr-auto left-[50%] right-[50%] text-center overflow-hidden">
           <div className="flex flex-col justify-start">
             <h1 className="text-[54px] font-extrabold text-start">Grabky</h1>
             <div className="flex gap-8">
